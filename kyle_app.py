@@ -1,10 +1,12 @@
+# Imports of modules we'll use
 from constants import *
 from flask import Flask, render_template
 from flask.ext.babel import Babel
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.user import current_user, login_required, UserManager, UserMixin, SQLAlchemyAdapter
-app = Flask(__name__)
 
+# Configure the Flask app with options settings
+app = Flask(__name__)
 app.config.update(
     SECRET_KEY = KYLE_SECRET_KEY,
     SQLALCHEMY_DATABASE_URI = KYLE_DATABASE_URI,
@@ -13,11 +15,11 @@ app.config.update(
     DEBUG = False
   )
 
+# Instantiate the DB adapter and Babel (required for Flask-User)
 db = SQLAlchemy(app)
 babel = Babel(app)
 
-
-# Define User model. Make sure to add flask.ext.user UserMixin!!
+# Define User model with basic required fields
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     active = db.Column(db.Boolean(), nullable=False, default=False)
@@ -27,9 +29,9 @@ class User(db.Model, UserMixin):
 # Create all database tables
 db.create_all()
 
-# Setup Flask-User
-db_adapter = SQLAlchemyAdapter(db,  User)       # Select database adapter
-user_manager = UserManager(db_adapter, app)     # Init Flask-User and bind to app
+# Setup Flask-User by linking to DB table
+db_adapter = SQLAlchemyAdapter(db,  User)
+user_manager = UserManager(db_adapter, app)
 
 
 @app.route("/")
@@ -45,5 +47,7 @@ def submit():
 def explore():
     return render_template('explore.html')
 
+
+# If we're running locally from server, then bind to all interfaces
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
