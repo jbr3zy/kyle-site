@@ -8,13 +8,22 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <style type="text/css">
-      .container{
-        max-width: 720px;
+      .container {
+        max-width: 960px;
+        margin: 20px auto;
+      }
+      .carousel {
+        max-width: 480px;
+        max-height: 360px;
         margin: 20px auto;
       }
       .carousel-inner > .item > img {
         width: 100%;
         max-height: 400px;
+      }
+      .panel-body {
+          height: 360px;
+          overflow-y: scroll;
       }
     </style>
   </head>
@@ -32,6 +41,59 @@
       </div>
     </div>
     <div class="container">
+     <div class="row">
+         <div class="col-sm-6">
+             <div class="panel-group" id="accordion">
+                 <div class="panel panel-default">
+                     <div class="panel-heading">
+                         <h4 class="panel-title">
+                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">The Visionary</a>
+                         </h4>
+                     </div>
+                     <div id="collapseOne" class="panel-collapse collapse in">
+                         <div class="panel-body">
+                             <p>It is very difficult to start at the beginning. Loosely, we will define "visionary" as the phenomenon of human experience that radically departs from daily perception attuned to biological and societal survival.<br><br>
+                             "Visionary" is not a wholly adequate term as it has become associated with all manner of tenuously genuine pseudo-systems of belief that tend to draw popular appeal from elements of accelerated self-help or facile salvation. Despite what baggage the modern popular imagination has linked to the visionary&mdash;in no small part due to movements like the late-19th century theosophists and mid-20th century psychonauts&mdash;this forum rejects that visionary experience is or should be associated with vapid mysticism or non-empirical leaps of faith.<br><br>
+                             If the popular imagination has had such a corrupting influence on our conception of the isionary, why creat a public website fostering the populus to discuss and delineate it? Why not leave it to the handful of professional intellectuals versed in the esoterism? The visionary experience proper, if such a thing can be proved to exist, has never been the majority condition of a society. Nor has a culture been entirely devoid of it. It is consistently a fringe phenomenon; but that may not be its necessary condition. If more individuals in a society could participate in collaborative efforts towards a genuine visionary experience of liberated perception, the human condition would be better for it.</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="panel panel-default">
+                     <div class="panel-heading">
+                         <h4 class="panel-title">
+                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What Will This Website Do?</a>
+                         </h4>
+                     </div>
+                     <div id="collapseTwo" class="panel-collapse collapse">
+                         <div class="panel-body">
+                             <p>By hosting creative work, organizing events, connecting like-minded people and (hopefully one day) providing financial and material support to associated projects, we aim to be a catalysing force in pushing our society in a direction that will allow the greatest number of people to lead the fullest and freest lives possible.<br><br>
+                                What can you do now? Submit work and ideas
+                                creative writing, poetry, painting, essays, music, thoughts scribbled on napkins. We want any work that pushes the boundaries of ordinary perception, describes or circumscribes the visionary, makes us say "wow," and gives us pause.</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="panel panel-default">
+                     <div class="panel-heading">
+                         <h4 class="panel-title">
+                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Where Do We Start?</a>
+                         </h4>
+                     </div>
+                     <div id="collapseThree" class="panel-collapse collapse">
+                         <div class="panel-body">
+                             <p>Nearly any form of expression is welcome, as long as it is shown to actively work towards the main question of the website. If you're into the idea but uncertain of where to begin, consider this loose collection of prompts:<br><br>
+                             <ul>
+                                 <li>Have you ever experienced something that you think was a visionary experience? Can you express it in narrative prose, poetry, drawing, music, etc?</li>
+                                 <li>How do issues of identity affect an individuals capacity for visionary experience? Is physical safety, a sort of Maslovian stability, prerequisite for visionary experience? Issues of identity include ethnicity, gender, sexuality, religion, political ideology, etc.</li>
+                                 <li>Are there different cardinalities of visionary experience? That is to say, is each true visionary experience of equal magnitude, or can it occur in varying degrees? Similarly, is visionary experience only passively experienced, or can it be actively induced?</li>
+                             </ul>
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         
+     <div class="col-sm-6">
       <div id="myCarousel" class="carousel slide">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -71,73 +133,8 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div>
-    </div>
-<div class="container">
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">The Idea</a>
-            </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <p>This website is an attempt at answering a question as old as humanity&mdash;it may even prove to define humanity. The question can be phrased many ways: why do we suffer? why aren't we all happy? why don't we know what life is about? For this attempted answer, the key lies in what has been generally referred to as "visionary experience." Despite the terminology used, please note that the philosophy being developed here is largely secular and often critical of religions. That being said, "Would to God that all the Lord's people were prophets," (Numbers 11.29) aptly describes the sentiment here sought after. Why aren't we in a natural state of vision and prophecy? Biological, sociological, and technological pressures have become powerful inhibitors, but they are not necessarily so. In their ideal forms they can be used to alleviate the unecessary pressures of life and allow people to lead sustained lives of liberated perception.<br><br>
-                <b>By hosting creative work, organizing events, connecting like-minded people and (hopefully one day) providing financial and material support to associated projects, we aim to be a catalysing force in pushing our society in a direction that will allow the greatest number of people to lead the fullest and freest lives possible.</b><br><br>
-                What can you do now? Submit work and ideas: creative writing, poetry, painting, essays, music, thoughts scribbled on napkins. We want any work that pushes the boundaries of ordinary perception, describes or circumscribes the visionary, makes us say "wow," and gives us pause.</p>
-            </div>
-          </div>
         </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">The Technical Details</a>
-            </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p>If you found that the introductory text left too many important points vague, didn't explain its aim in enough detail, or generally did not suit your fancy, we have prepared a longer explanation of the important thoughts that led to the creation of this site. Check it out <a href="essay">Here.</a> If you're not into that much dense text, check out the "Who We Are" and "Who We're Not" slides for a more general feel.</p>
-            </div>
-          </div>
         </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Who We Are</a>
-            </h4>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p>People who will find themselves in good company on this website:<br><br>
-              <ul>
-                <li>Those with strongly empirical backgrounds who still find themselves sympathizing with anti-empircal thought (and vice versa).</li>
-                <li>Those who believe that a transcendentally brilliant consciousness (the likes of which perhaps have never or cannot exist in a human body) would find that aesthetic and mathematical forms are ultimately indistinguishable.</li>
-                <li>Those who believe in concepts such as absolute truth and supra-animal consciousness, but are highly skeptical of most treatments of these themes.</li>
-              </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Who We Are Not</a>
-            </h4>
-          </div>
-          <div id="collapseFour" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p>Visitors of this site should note well that although we make use of terms like "beatific vision," this site is looking to develop a highly rational and critical philosophy, which makes no claims to follow any religion. However, within the paradigm of Western culture, it is beneficial to make use of and appropriate certain established terms in order to facilitate understanding. In order to define the line we percieve between the academic appropriate of certain terminology, and the artless, wholesale misappropriation of various philosophies in mad attempts to create meaning, we offer the following examples.  Though they may use similar aesthetics and rhetorical strategies as this site, they are actually profoundly at odds with our reasoning:<br><br>
-                <ul>
-                    <li>Link to a site.</li>
-                    <li>link to a site.</li>
-                    <li>etc...</li>
-                </ul><br><br>
-              If you found any of those sites divinely inspiring, you may find this site skeptical and curmudgeonly. If you enjoyed the earnestness, aesthetic and general philosophical attitude of those sites, but still remain highly skeptical of them, welcome home.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </body>
 </html>

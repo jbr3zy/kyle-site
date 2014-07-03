@@ -47,6 +47,10 @@ def submit():
 def explore():
     return render_template('explore.html')
 
+@app.route("/connect")
+def connect():
+    return render_template('connect.html')
+
 
 # If we're running locally from server, then bind to all interfaces
 if __name__ == "__main__":
