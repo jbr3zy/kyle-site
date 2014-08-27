@@ -11,7 +11,7 @@ app.config.update(
     SECRET_KEY = KYLE_SECRET_KEY,
     SQLALCHEMY_DATABASE_URI = KYLE_DATABASE_URI,
     CSRF_ENABLED = True,
-    USER_ENABLE_EMAIL = False,
+    USER_ENABLE_EMAIL = True,
     DEBUG = False
   )
 
@@ -25,6 +25,7 @@ class User(db.Model, UserMixin):
     active = db.Column(db.Boolean(), nullable=False, default=False)
     username = db.Column(db.String(50), nullable=False, unique=True)
     password = db.Column(db.String(255), nullable=False, default='')
+    email = db.Column (db.String(255), nullable=True, default='')
 
 # Create all database tables
 db.create_all()
